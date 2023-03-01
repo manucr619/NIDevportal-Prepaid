@@ -195,6 +195,23 @@ const initialNodes: Node<TurboNodeData>[] = [
     },
     type: "turbo",
   },
+  {
+    id: "11",
+    position: { x: 1550, y: -300 },
+    data: {
+      icon: <FiBox />,
+      title: "Fetch Statement",
+      url: (
+        <a
+          href="https://test-developer.ads.network.ae/getapis/card-services?categoryid=1&apiid=apiid-15&v=V2"
+          target="_blank"
+        >
+          Card Statement Summary API
+        </a>
+      ),
+    },
+    type: "turbo",
+  },
 ];
 
 const initialEdges: Edge[] = [
@@ -251,6 +268,12 @@ const initialEdges: Edge[] = [
     id: "e6-10",
     source: "6",
     target: "10",
+    animated: true,
+  },
+  {
+    id: "e6-11",
+    source: "6",
+    target: "11",
     animated: true,
   },
 ];
