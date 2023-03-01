@@ -6,7 +6,7 @@ import ReactFlow, {
   addEdge,
   Node,
   FitView,
-  Edge
+  Edge,
 } from "reactflow";
 import {
   FiBox,
@@ -15,7 +15,7 @@ import {
   FiUser,
   FiUserCheck,
   FiUserMinus,
-  FiUserPlus
+  FiUserPlus,
 } from "react-icons/fi";
 
 import "reactflow/dist/base.css";
@@ -33,12 +33,15 @@ const initialNodes: Node<TurboNodeData>[] = [
       icon: <FiUser />,
       title: "OAuth ",
       url: (
-        <a href="https://www.w3schools.com" target="_blank">
+        <a
+          href="https://test-developer.ads.network.ae/apis/getingstarted?doc_id=1"
+          target="_blank"
+        >
           Generate Token API
         </a>
-      )
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "2",
@@ -47,12 +50,15 @@ const initialNodes: Node<TurboNodeData>[] = [
       icon: <FiUserPlus />,
       title: "Create New Client",
       url: (
-        <a href="https://www.w3schools.com" target="_blank">
+        <a
+          href="https://test-developer.ads.network.ae/getapis/account-services?categoryid=2&apiid=apiid-19&v=V2"
+          target="_blank"
+        >
           Client Create API
         </a>
-      )
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "3",
@@ -61,12 +67,15 @@ const initialNodes: Node<TurboNodeData>[] = [
       icon: <FiBox />,
       title: "Create new account",
       url: (
-        <a href="https://www.w3schools.com" target="_blank">
+        <a
+          href="https://test-developer.ads.network.ae/getapis/account-services?categoryid=2&apiid=apiid-29&v=V2"
+          target="_blank"
+        >
           Account Create API
         </a>
-      )
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "4",
@@ -81,9 +90,9 @@ const initialNodes: Node<TurboNodeData>[] = [
         >
           Card Create API
         </a>
-      )
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "5",
@@ -92,21 +101,31 @@ const initialNodes: Node<TurboNodeData>[] = [
       icon: <FiUserPlus />,
       title: "Activate Card",
       url: (
-        <a href="https://www.w3schools.com" target="_blank">
+        <a
+          href="https://test-developer.ads.network.ae/getapis/card-services?categoryid=1&apiid=apiid-8&v=V2"
+          target="_blank"
+        >
           Activate Card API
         </a>
-      )
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "6",
     position: { x: 1250, y: 0 },
     data: {
       title: "💳 Set Card PIN",
-      url: <a href="https://www.w3schools.com">Card PIN API</a>
+      url: (
+        <a
+          href="https://test-developer.ads.network.ae/getapis/pin-management?categoryid=7&apiid=apiid-14&v=V2"
+          target="_blank"
+        >
+          Card PIN API
+        </a>
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "7",
@@ -114,9 +133,16 @@ const initialNodes: Node<TurboNodeData>[] = [
     data: {
       icon: <FiCreditCard />,
       title: "Intiate a Transaction",
-      url: <a href="https://www.w3schools.com">Transaction API</a>
+      url: (
+        <a
+          href="https://test-developer.ads.network.ae/getapis/transactions?categoryid=3&apiid=apiid-17&v=V2"
+          target="_blank"
+        >
+          Transaction API
+        </a>
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "8",
@@ -124,9 +150,16 @@ const initialNodes: Node<TurboNodeData>[] = [
     data: {
       icon: <FiBox />,
       title: "Retrieves plans attached",
-      url: <a href="https://www.w3schools.com">Get Plans API</a>
+      url: (
+        <a
+          href="https://test-developer.ads.network.ae/getapis/buy-now-pay-later?categoryid=6&apiid=apiid-28&v=V2"
+          target="_blank"
+        >
+          Get Plans API
+        </a>
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "9",
@@ -135,10 +168,15 @@ const initialNodes: Node<TurboNodeData>[] = [
       icon: <FiBox />,
       title: "Tokenized Card Number",
       url: (
-        <a href="https://www.w3schools.com">Get Lookup Card Identifier API</a>
-      )
+        <a
+          href="https://test-developer.ads.network.ae/getapis/card-services?categoryid=1&apiid=apiid-1&v=V2"
+          target="_blank"
+        >
+          Get Lookup Card Identifier API
+        </a>
+      ),
     },
-    type: "turbo"
+    type: "turbo",
   },
   {
     id: "10",
@@ -146,10 +184,17 @@ const initialNodes: Node<TurboNodeData>[] = [
     data: {
       icon: <FiBox />,
       title: "Limits attached to a card",
-      url: <a href="https://www.w3schools.com">Get Limits API</a>
+      url: (
+        <a
+          href="https://test-developer.ads.network.ae/getapis/card-services?categoryid=1&apiid=apiid-27&v=V2"
+          target="_blank"
+        >
+          Get Limits API
+        </a>
+      ),
     },
-    type: "turbo"
-  }
+    type: "turbo",
+  },
 ];
 
 const initialEdges: Edge[] = [
@@ -157,70 +202,70 @@ const initialEdges: Edge[] = [
     id: "e1-2",
     source: "1",
     target: "2",
-    animated: false
+    animated: false,
   },
   {
     id: "e2-3",
     source: "2",
     target: "3",
-    animated: false
+    animated: false,
   },
   {
     id: "e3-4",
     source: "3",
     target: "4",
-    animated: false
+    animated: false,
   },
   {
     id: "e4-5",
     source: "4",
     target: "5",
-    animated: false
+    animated: false,
   },
   {
     id: "e5-6",
     source: "5",
     target: "6",
-    animated: false
+    animated: false,
   },
 
   {
     id: "e6-7",
     source: "6",
     target: "7",
-    animated: true
+    animated: true,
   },
   {
     id: "e6-8",
     source: "6",
     target: "8",
-    animated: true
+    animated: true,
   },
   {
     id: "e6-9",
     source: "6",
     target: "9",
-    animated: true
+    animated: true,
   },
   {
     id: "e6-10",
     source: "6",
     target: "10",
-    animated: true
-  }
+    animated: true,
+  },
 ];
 
 const nodeTypes = {
-  turbo: TurboNode
+  turbo: TurboNode,
 };
 
 const edgeTypes = {
-  turbo: TurboEdge
+  turbo: TurboEdge,
 };
 
 const defaultEdgeOptions = {
   type: "turbo",
-  markerEnd: "edge-circle"
+  markerEnd: "edge-circle",
 };
 
 const Flow = () => {
