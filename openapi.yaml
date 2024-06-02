@@ -3,8 +3,33 @@ info:
   title: Credit Solutions - Network International
   version: '2.0'
 servers:
-  - url: https://api-dev.network.global
+  - url: 'https://cors-anywhere.herokuapp.com/https://api-dev.network.global'
 paths:
+  /tokenkc/generate:
+    post:
+      summary: Generate Token
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                grant_type:
+                  type: string
+                  example: client_credentials
+                client_id:
+                  type: string
+                  example: cd1c8c3d-3764-4c07-9efb-8efcd77d3275506282
+                client_secret:
+                  type: string
+                  example: 2xJsANXQpf2bjyLOmiNGr7DkuHSzBOSC
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
   /V2/cardservices/ClientCreate:
     post:
       tags:
