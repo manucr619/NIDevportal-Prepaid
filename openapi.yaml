@@ -2829,12 +2829,17 @@ paths:
           description: Service Not Found
           content: {}
 security:
-   - basicAuth: []
+  - OAuth2: []
 components:
   securitySchemes:
-    basicAuth:     # Can be any name, 'basicAuth' is a descriptive choice
-      type: http
-      scheme: basic
+    OAuth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://api-dev.network.global/v1/tokenkc/generate
+          scopes:
+            read: Grants read access
+            write: Grants write access
   schemas:
     NISrvRequestAccountList:
       required:
