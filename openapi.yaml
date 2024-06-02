@@ -3,7 +3,7 @@ info:
   title: Credit Solutions - Network International
   version: '2.0'
 servers:
-  - url: 'https://api-dev.network.global'
+  - url: https://api-dev.network.global
 paths:
   /tokenkc/generate:
     post:
