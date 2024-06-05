@@ -26,17 +26,17 @@
                   "grant_type": {
                     "type": "string",
                     "description": "Specifies the type of grant",
-                    "example": "client_credentials"
+                    "default": "client_credentials"
                   },
                   "client_id": {
                     "type": "string",
                     "description": "Client ID",
-                    "example": "cd1c8c3d-3764-4c07-9efb-8efcd77d3275506282"
+                    "default": "cd1c8c3d-3764-4c07-9efb-8efcd77d3275506282"
                   },
                   "client_secret": {
                     "type": "string",
                     "description": "Client Secret",
-                    "example": "2xJsANXQpf2bjyLOmiNGr7DkuHSzBOSC"
+                    "default": "2xJsANXQpf2bjyLOmiNGr7DkuHSzBOSC"
                   }
                 }
               }
