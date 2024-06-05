@@ -53,7 +53,8 @@
                   "properties": {
                     "access_token": {
                       "type": "string",
-                      "description": "Access token issued by the server"
+                      "description": "Access token issued by the server",
+                      "example":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHalRMSU9rSk9vMFhkcTh3RzBHV0o3ZXVYekhTZmxzclI3TElkMjJqR1hzIn0.eyJleHAiOjE3MTc1ODYwMjIsImlhdCI6MTcxNzU4NDIyMiwianRpIjoiNDdkZTU4OWYtZGNlMS00OGYxLTliMGQtMTc3ZDIxZmZlYTBkIiwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS5uZXR3b3JrLmdsb2JhbC9hdXRoL3JlYWxtcy9OSS1Qcm9kIiwic3ViIjoiNGU1ZDY3OGQtMTNmNC00YzhhLWJmZjItMDU5NTQ3NjJlNDVlIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY2QxYzhjM2QtMzc2NC00YzA3LTllZmItOGVmY2Q3N2QzMjc1NTA2MjgyIiwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRJZCI6ImNkMWM4YzNkLTM3NjQtNGMwNy05ZWZiLThlZmNkNzdkMzI3NTUwNjI4MiIsIm9yZ19pZCI6Ik5JQyIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1jZDFjOGMzZC0zNzY0LTRjMDctOWVmYi04ZWZjZDc3ZDMyNzU1MDYyODIifQ.BMWzx2b4mU5jeeSuJrczipvOly8YeNvE7jO7y5LBucguP5mHGCp99iDYwH3PidxBSh9-JucKI0hJe2d9FkYG05_QLO6iI0dkVA2Ml_5s-5LGA8Oo15O_-89WYRrjpypajaGKO9AhgYvZJRINn-X3gfkuQNWLCzCf5-SgMwTzAAc88BBpOF7r84--NBGy28dL-woCnJCPzT0cTcS8-AOfV3mhZWfBZ7Ktx3u2-kAlbONsrkidvg74KzXhFgyBtdrSUbOpt_Uk-qI5UqQ3RF2-wnIGJDyKOxpJL_6cagxRfdjT8TXySunB8lb6IGiOYBFDPY4F3Iirh4aTToqoF7rQPQ"
                     },
                     "token_type": {
                       "type": "string",
