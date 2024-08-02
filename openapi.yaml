@@ -3,7 +3,7 @@ info:
   title: Credit Solutions - Network International
   version: '2.0'
 servers:
-  - url: https://api-sandbox.network.global/
+  - url: https://api-sandbox.network.global
 paths:
   /V2/cardservices/ClientCreate:
     post:
